@@ -10,12 +10,8 @@ export function ChatApp() {
     <div className="grid min-h-screen w-full md:grid-cols-[280px_1fr] lg:grid-cols-[280px_1fr]">
       <Sidebar />
       <div className="flex flex-col h-full max-h-screen">
-        {chatId && (
-          <>
-            <Header />
-            <ChatMessages />
-          </>
-        )}
+        <Header />
+        {chatId && <ChatMessages />}
       </div>
     </div>
   );
