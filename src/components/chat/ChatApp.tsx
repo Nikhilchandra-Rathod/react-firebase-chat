@@ -7,7 +7,7 @@ export function ChatApp() {
   const chatId = useChatStore((state) => state.chatId);
 
   return (
-    <div className="grid min-h-screen w-full md:grid-cols-[280px_1fr] lg:grid-cols-[280px_1fr]">
+    <div className="grid h-dvh w-dvw md:grid-cols-[280px_1fr] lg:grid-cols-[280px_1fr]">
       <Sidebar />
       <div className="flex flex-col h-full max-h-screen">
         <Header />
