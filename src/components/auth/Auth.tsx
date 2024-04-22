@@ -14,5 +14,5 @@ export const Auth = () => {
   const handleAfterSignUp = () => {
     setCurrentView("login");
   };
-  return <div className="flex h-screen items-center justify-center">{currentView === "login" ? <LoginForm onSignUpClick={() => handleChangeView("signup")} /> : <SignUpForm onAfterSingUp={handleAfterSignUp} />}</div>;
+  return <div className="flex h-dvh w-dvw items-center px-4 md:px-0 justify-center">{currentView === "login" ? <LoginForm onSignUpClick={() => handleChangeView("signup")} /> : <SignUpForm onAfterSingUp={handleAfterSignUp} />}</div>;
 };
